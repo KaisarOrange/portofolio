@@ -5,11 +5,14 @@
   width: 75vw;
   margin: auto;
   height: 100vh;
+
+  font-size: larger;
 }
 
 .title {
   display: flex;
   flex-direction: column;
+
   line-height: 0;
   h3 {
     color: rgb(36, 27, 196);
