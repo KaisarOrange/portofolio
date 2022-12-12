@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75vw;
+  margin: auto;
+  margin-top: 50px;
+}
+.heading {
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+  h3 {
+    color: rgb(36, 27, 196);
+  }
+}
+.image {
+  margin-top: 20px;
+  display: flex;
+  div {
+    flex: 1;
+  }
+  .profile {
+    border-radius: 10%;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.351);
+  }
+
+  .stack {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .svgg {
+    width: 4rem;
+    margin: 5px;
+    &.png {
+      width: 3rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+}

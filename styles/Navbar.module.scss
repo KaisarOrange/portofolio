@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  width: 75vw;
+  margin-top: 20px;
+}
+.a {
+  font-weight: bold;
+  padding: 0px 30px;
+
+  cursor: pointer;
+  &:hover {
+    color: rgb(2, 2, 218);
+    transition: ease-in 0.2s;
+  }
+}

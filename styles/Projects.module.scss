@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+}
+.title {
+  margin: 0;
+}
+.image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.bangkit {
+  background-color: #000057;
+  overflow: hidden;
+  border-radius: 1%;
+  padding-bottom: 20px;
+  box-shadow: 2px 5px 5px;
+  padding: 10px;
+
+  .text {
+    color: white;
+    padding-left: 10px;
+  }
+  .svgg {
+    width: 4rem;
+    margin: 5px;
+    &.png {
+      width: 3rem;
+    }
+  }
+}
+.git {
+  text-align: end;
+  margin-top: 10px;
+  width: 3rem;
+}
+.buttonDiv {
+  margin-left: 10px;
+
+  .btn {
+    margin-right: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    &:active {
+      background-color: rgb(225, 225, 225);
+    }
+    img {
+      width: 0.8rem;
+    }
+  }
+}
+
+.under {
+  height: 5px;
+  width: 16%;
+  background-color: #000057;
+  margin: 10px 0px 70px;
+}
+
+.footer {
+  display: flex;
+}
+.links {
+  text-decoration: none;
+  &:visited {
+    color: black;
+  }
+}
+
+//Sidebar
+
+.sidebar {
+  display: flex;
+  width: 300px;
+  cursor: pointer;
+  &:hover {
+    .text {
+      transform: scale(1.05);
+      transition: 0.2s;
+    }
+  }
+  .text {
+    margin: 20px 10px;
+  }
+}
+.sidebarBar {
+  width: 5px;
+  background-color: #acacac;
+  margin-right: 20px;
+}
+.selected {
+  background-color: #000057;
+}
+.sidebarBarBar {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(36, 27, 196);
+}
+.realSideBar {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  .div {
+    flex: 1;
+  }
+}
