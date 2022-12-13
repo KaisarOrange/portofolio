@@ -5,10 +5,10 @@ import Projects from './Projects';
 function Project() {
   const [selected, setSelect] = useState(0);
   const image = [
-    '/img/bangkit.gif',
-    '/img/pasta.gif',
-    '/img/calc.gif',
-    '/img/tic.gif',
+    '/img/bangkitT.mp4',
+    '/img/pasta.mp4',
+    '/img/calc.mp4',
+    '/img/tic.mp4',
   ];
   const title = ['  '];
   const link = [

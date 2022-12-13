@@ -4,7 +4,7 @@ function Heading() {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h1>Alif Ayodya Test</h1>
+        <h1>Alif Ayodya</h1>
         <h3>Front End Engineer</h3>
       </div>
       <div className={styles.image}>
