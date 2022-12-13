@@ -11,7 +11,7 @@ function Projects({ image, deskripsi, title, stack, linkTo, git }) {
     <div>
       <div className={styles.bangkit}>
         <div>
-          <video src={image} autoPlay loop muted />
+          <video src={image} autoPlay loop muted controls />
         </div>
 
         <h1 className={styles.text}>{title}</h1>
@@ -31,7 +31,6 @@ function Projects({ image, deskripsi, title, stack, linkTo, git }) {
         </div>
         <div className={styles.footer}>
           {stack.map((e) => {
-            console.log(e);
             return (
               <p key={uniqid()} className={styles.text}>
                 {e}
