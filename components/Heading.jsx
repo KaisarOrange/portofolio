@@ -24,7 +24,7 @@ function Heading() {
           <div className={styles.stack}>
             <img className={styles.svgg} src='./img/js.svg'></img>
             <img className={styles.svgg} src='./img/react.svg'></img>
-            <img className={styles.svgg} src='./img/next.svg'></img>
+
             <img className={styles.svgg} src='./img/tail.svg'></img>
             <img className={styles.svgg} src='./img/sass.svg'></img>
             <img className={`${styles.svgg}`} src='./img/rq.png' />
