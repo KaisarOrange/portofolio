@@ -2,11 +2,12 @@ import React from 'react';
 import styles from '../styles/Projects.module.scss';
 import Link from 'next/link';
 import uniqid from 'uniqid';
+import Image from 'next/image';
 function Projects({ image, deskripsi, title, stack, linkTo, git }) {
   return (
     <div>
       <div className={styles.bangkit}>
-        <img className={styles.image} src={image} />
+        <Image className={styles.image} src={image} />
         <h1 className={styles.text}>{title}</h1>
         <h3 className={styles.text}>{deskripsi}</h3>
         <div className={styles.buttonDiv}>
@@ -17,7 +18,7 @@ function Projects({ image, deskripsi, title, stack, linkTo, git }) {
           <Link className={styles.links} href={git}>
             <button className={styles.btn}>
               <div>
-                GitHub <img src='/img/github.png' />
+                GitHub <Image src='/img/github.png' />
               </div>
             </button>
           </Link>
