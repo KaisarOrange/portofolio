@@ -36,7 +36,7 @@ function Project() {
     ['HTML', 'CSS', 'Javascript'],
   ];
   return (
-    <div className={styles.container}>
+    <div id='project' className={styles.container}>
       <div className={styles.realSideBar}>
         <div>
           <div className={styles.sidebarBarBar}>

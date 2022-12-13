@@ -4,8 +4,12 @@ function Navbar() {
   return (
     <div className={styles.container}>
       <a className={styles.a}>Home</a>
-      <a className={styles.a}>Projects</a>
-      <a className={styles.a}>Contact</a>
+      <a className={styles.a} href='#project'>
+        Projects
+      </a>
+      <a className={styles.a} href='#contact'>
+        Contact
+      </a>
     </div>
   );
 }

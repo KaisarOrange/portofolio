@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '../styles/Contact.module.scss';
 function Contact() {
   return (
-    <div className={styles.container}>
+    <div id='contact' className={styles.container}>
       <div className={styles.content}>
         <div className={styles.titleContainer}>
           <h1 className={styles.title}>Contact</h1>
