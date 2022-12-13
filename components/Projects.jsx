@@ -11,7 +11,15 @@ function Projects({ image, deskripsi, title, stack, linkTo, git }) {
     <div>
       <div className={styles.bangkit}>
         <div>
-          <video src={image} autoPlay loop muted controls />
+          <video
+            src={image}
+            autoPlay
+            loop
+            muted
+            controls
+            height={500}
+            width={780}
+          />
         </div>
 
         <h1 className={styles.text}>{title}</h1>
