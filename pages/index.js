@@ -3,6 +3,7 @@ import Heading from '../components/Heading';
 import Navbar from '../components/Navbar';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+
 export default function Home() {
   return (
     <div>

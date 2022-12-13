@@ -1,9 +1,14 @@
 import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Contact.module.scss';
+import { useInView } from 'react-intersection-observer';
 function Contact() {
+  const { ref, inView } = useInView({ threshold: 0, triggerOnce: true });
   return (
-    <div id='contact' className={styles.container}>
+    <div
+      id='contact'
+      className={`${styles.container} ${inView ? styles.show : ''}`}
+    >
       <div className={styles.content}>
         <div className={styles.titleContainer}>
           <h1 className={styles.title}>Contact</h1>
@@ -16,7 +21,7 @@ function Contact() {
           >
             <img src='/img/link.svg' />
           </Link>
-          <div className={styles.zyzz}>
+          <div ref={ref} className={styles.zyzz}>
             <img src='/img/zyzz.png' />
           </div>
           <Link className={styles.link} href='https://github.com/KaisarOrange/'>

@@ -2,7 +2,9 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import styles from '../styles/Projects.module.scss';
 import Projects from './Projects';
+import { useInView } from 'react-intersection-observer';
 function Project() {
+  const { ref, inView } = useInView({ threshold: 0, triggerOnce: true });
   const [selected, setSelect] = useState(0);
   const image = [
     '/img/bangkitT.mp4',
@@ -36,7 +38,11 @@ function Project() {
     ['HTML', 'CSS', 'Javascript'],
   ];
   return (
-    <div id='project' className={styles.container}>
+    <div
+      id='project'
+      className={`${styles.container} ${inView ? styles.show : ''}`}
+      ref={ref}
+    >
       <div className={styles.realSideBar}>
         <div>
           <div className={styles.sidebarBarBar}>

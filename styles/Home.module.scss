@@ -7,6 +7,11 @@
   height: 100vh;
 
   font-size: larger;
+  opacity: 0;
+  transition: opacity 1s linear 2000ms, opacity 2000ms;
+  &.show {
+    opacity: 1;
+  }
 }
 
 .title {

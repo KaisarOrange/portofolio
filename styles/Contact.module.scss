@@ -4,6 +4,12 @@
   padding: 15px;
   padding: 40px 0px;
   padding-bottom: 80px;
+  margin-top: 100px;
+  opacity: 0;
+  transition: opacity 1s linear 1000ms, opacity 1000ms;
+  &.show {
+    opacity: 1;
+  }
 }
 
 .title {

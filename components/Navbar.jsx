@@ -3,7 +3,9 @@ import styles from '../styles/Navbar.module.scss';
 function Navbar() {
   return (
     <div className={styles.container}>
-      <a className={styles.a}>Home</a>
+      <a className={styles.a} href=''>
+        Home
+      </a>
       <a className={styles.a} href='#project'>
         Projects
       </a>

@@ -1,8 +1,13 @@
 import React from 'react';
 import styles from '../styles/Home.module.scss';
+import { useInView } from 'react-intersection-observer';
 function Heading() {
+  const { ref, inView } = useInView({ threshold: 0, triggerOnce: true });
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} ${inView ? styles.show : ''}`}
+      ref={ref}
+    >
       <div className={styles.title}>
         <h1>Alif Ayodya</h1>
         <h3>Front End Engineer</h3>
