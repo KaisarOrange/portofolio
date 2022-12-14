@@ -14,7 +14,7 @@ function Contact() {
           <h1 className={styles.title}>Contact</h1>
           <div className={styles.underline}></div>
         </div>
-        <div className={styles.contactContentContainer}>
+        <div className={styles.contactContentContainer} ref={ref}>
           <Link
             className={styles.link}
             href='https://www.linkedin.com/in/alif-ayodya22/'
