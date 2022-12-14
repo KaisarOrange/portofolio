@@ -21,9 +21,6 @@ function Contact() {
           >
             <img src='/img/link.svg' />
           </Link>
-          <div ref={ref} className={styles.zyzz}>
-            <img src='/img/zyzz.png' />
-          </div>
           <Link className={styles.link} href='https://github.com/KaisarOrange/'>
             <img src='/img/github.png' />
           </Link>
