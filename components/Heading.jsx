@@ -16,10 +16,14 @@ function Heading() {
         <div>
           <img className={styles.profile} src='./img/alip.png'></img>
         </div>
-        <div>
+        <div className={styles.about}>
           <h2>Hello, World!</h2>
-          <p>Web developer student from University of Brawijaya</p>
-          <p>I like to learn new things and seek challenges</p>
+          <p>
+            Web developer student from University of Brawijaya I like to learn
+            new things and seek challenges. Specialising in Javascript language,
+            framework, and libraries. Mainly React.js, but open to learn beyond
+            it.
+          </p>
         </div>
       </div>
     </div>
