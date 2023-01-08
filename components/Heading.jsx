@@ -20,11 +20,18 @@ function Heading() {
           <h2>Hello, World!</h2>
           <p>Web developer student from University of Brawijaya</p>
           <p>I like to learn new things and seek challenges</p>
-          <h2>Stacks i've used</h2>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Heading;
+{
+  /* <h2>Stacks i've used</h2>
           <div className={styles.stack}>
             <img className={styles.svgg} src='./img/js.svg'></img>
             <img className={styles.svgg} src='./img/react.svg'></img>
-
             <img className={styles.svgg} src='./img/tail.svg'></img>
             <img className={styles.svgg} src='./img/sass.svg'></img>
             <img className={`${styles.svgg}`} src='./img/rq.png' />
@@ -33,11 +40,5 @@ function Heading() {
               src='./img/firebase.png'
             />
             <img className={`${styles.svgg}  `} src='./img/chakra.png' />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+          </div> */
 }
-
-export default Heading;
