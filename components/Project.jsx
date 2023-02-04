@@ -16,7 +16,7 @@ function Project() {
   const title = ['  '];
   const link = [
     'https://kaisarorange.github.io/bangkit-app/',
-    'https://github.com/KaisarOrange/order-app',
+    'https://kaisarorange.github.io/order-app',
     'https://pastaboyss.web.app/',
     'https://kaisarorange.github.io/calculator/',
     'https://kaisarorange.github.io/tic-tac-toe/',
