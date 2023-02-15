@@ -51,6 +51,16 @@ function Project() {
     >
       <div className={styles.realSideBar}>
         <div>
+          <div>
+            <Projects
+              image={image[selected]}
+              linkTo={link[selected]}
+              title={title[selected]}
+              deskripsi={deskripti[selected]}
+              stack={stack[selected]}
+              git={git[selected]}
+            />
+          </div>
           <div className={styles.sidebarBarBar}>
             <div onClick={() => setSelect(0)} className={styles.sidebar}>
               {' '}
@@ -98,16 +108,6 @@ function Project() {
               <div className={styles.text}>Tic Tac Toe</div>
             </div>
           </div>
-        </div>
-        <div>
-          <Projects
-            image={image[selected]}
-            linkTo={link[selected]}
-            title={title[selected]}
-            deskripsi={deskripti[selected]}
-            stack={stack[selected]}
-            git={git[selected]}
-          />
         </div>
       </div>
     </div>

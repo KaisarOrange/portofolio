@@ -12,11 +12,11 @@ function Heading() {
         <h1>Alif Ayodya</h1>
         <h3>Front End Engineer</h3>
       </div>
-      <div className={styles.image}>
+      <div className={styles.about}>
         <div>
           <img className={styles.profile} src='./img/alip.png'></img>
         </div>
-        <div className={styles.about}>
+        <div className={styles.summary}>
           <h2>Hello, World!</h2>
           <p>
             Web developer student from University of Brawijaya I like to learn

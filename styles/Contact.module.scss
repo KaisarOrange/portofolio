@@ -14,6 +14,7 @@
 
 .title {
   line-height: 5px;
+  font-size: 1.8rem;
 }
 .content {
   width: 75vw;
@@ -50,6 +51,13 @@
     transition: 0.1s;
   }
   img {
-    width: 5rem;
+    width: 4rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .link {
+    img {
+      width: 5rem;
+    }
   }
 }

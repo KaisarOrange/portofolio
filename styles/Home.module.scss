@@ -1,12 +1,7 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 75vw;
   margin: auto;
-  height: 100vh;
-
   font-size: larger;
+
   opacity: 0;
   transition: opacity 1s linear 2000ms, opacity 2000ms;
   &.show {
@@ -22,21 +17,36 @@
 .title {
   display: flex;
   flex-direction: column;
-
+  margin-top: 50px;
+  align-items: center;
+  font-size: 0.9rem;
   line-height: 0;
   h3 {
     color: rgb(36, 27, 196);
   }
 }
-.image {
-  margin-top: 20px;
+.about {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
   div {
     flex: 1;
   }
+
   .profile {
     border-radius: 10%;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.351);
+    width: 15rem;
+  }
+  h2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
   }
 
   .stack {
@@ -54,5 +64,24 @@
   }
 }
 
-@media (max-width: 600px) {
+@media only screen and (min-width: 768px) {
+  .title {
+    padding: 15px;
+    align-items: start;
+  }
+  .container {
+    padding: 10px;
+  }
+  .about {
+    flex-direction: row;
+    p {
+      text-align: start;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    height: 100vh;
+    width: 75vw;
+  }
 }

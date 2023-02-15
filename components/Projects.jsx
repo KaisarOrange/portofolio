@@ -12,13 +12,12 @@ function Projects({ image, deskripsi, title, stack, linkTo, git }) {
       <div className={styles.bangkit}>
         <div>
           <video
+            className={styles.video}
             src={image}
             autoPlay
             loop
             muted
             controls
-            height={500}
-            width={780}
           />
         </div>
 
