@@ -24,6 +24,9 @@
 
 @media only screen and (min-width: 1024px) {
   .container {
+    justify-content: end;
     width: 75vw;
+    gap: 70px;
+    font-size: 1.2rem;
   }
 }

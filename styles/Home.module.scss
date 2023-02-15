@@ -84,4 +84,13 @@
     height: 100vh;
     width: 75vw;
   }
+  .about {
+    h2 {
+      text-align: start;
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }

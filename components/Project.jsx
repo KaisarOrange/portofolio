@@ -49,66 +49,62 @@ function Project() {
       className={`${styles.container} ${inView ? styles.show : ''}`}
       ref={ref}
     >
-      <div className={styles.realSideBar}>
-        <div>
-          <div>
-            <Projects
-              image={image[selected]}
-              linkTo={link[selected]}
-              title={title[selected]}
-              deskripsi={deskripti[selected]}
-              stack={stack[selected]}
-              git={git[selected]}
-            />
-          </div>
-          <div className={styles.sidebarBarBar}>
-            <div onClick={() => setSelect(0)} className={styles.sidebar}>
-              {' '}
-              <div
-                className={`${styles.sidebarBar} ${
-                  selected === 0 ? styles.selected : ''
-                }`}
-              ></div>
-              <div className={styles.text}>UMKM crowdfunding app</div>
-            </div>
-            <div onClick={() => setSelect(1)} className={styles.sidebar}>
-              {' '}
-              <div
-                className={`${styles.sidebarBar} ${
-                  selected === 1 ? styles.selected : ''
-                }`}
-              ></div>
-              <div className={styles.text}>Order App</div>
-            </div>
-            <div onClick={() => setSelect(2)} className={styles.sidebar}>
-              {' '}
-              <div
-                className={`${styles.sidebarBar} ${
-                  selected === 2 ? styles.selected : ''
-                }`}
-              ></div>
-              <div className={styles.text}>Food business landing page</div>
-            </div>
-            <div onClick={() => setSelect(3)} className={styles.sidebar}>
-              {' '}
-              <div
-                className={`${styles.sidebarBar} ${
-                  selected === 3 ? styles.selected : ''
-                }`}
-              ></div>
-              <div className={styles.text}>Calculator</div>
-            </div>
-            <div onClick={() => setSelect(4)} className={styles.sidebar}>
-              {' '}
-              <div
-                className={`${styles.sidebarBar} ${
-                  selected === 4 ? styles.selected : ''
-                }`}
-              ></div>
-              <div className={styles.text}>Tic Tac Toe</div>
-            </div>
-          </div>
+      <div className={styles.sidebarBarBar}>
+        <div onClick={() => setSelect(0)} className={styles.sidebar}>
+          {' '}
+          <div
+            className={`${styles.sidebarBar} ${
+              selected === 0 ? styles.selected : ''
+            }`}
+          ></div>
+          <div className={styles.text}>UMKM crowdfunding app</div>
         </div>
+        <div onClick={() => setSelect(1)} className={styles.sidebar}>
+          {' '}
+          <div
+            className={`${styles.sidebarBar} ${
+              selected === 1 ? styles.selected : ''
+            }`}
+          ></div>
+          <div className={styles.text}>Order App</div>
+        </div>
+        <div onClick={() => setSelect(2)} className={styles.sidebar}>
+          {' '}
+          <div
+            className={`${styles.sidebarBar} ${
+              selected === 2 ? styles.selected : ''
+            }`}
+          ></div>
+          <div className={styles.text}>Food business landing page</div>
+        </div>
+        <div onClick={() => setSelect(3)} className={styles.sidebar}>
+          {' '}
+          <div
+            className={`${styles.sidebarBar} ${
+              selected === 3 ? styles.selected : ''
+            }`}
+          ></div>
+          <div className={styles.text}>Calculator</div>
+        </div>
+        <div onClick={() => setSelect(4)} className={styles.sidebar}>
+          {' '}
+          <div
+            className={`${styles.sidebarBar} ${
+              selected === 4 ? styles.selected : ''
+            }`}
+          ></div>
+          <div className={styles.text}>Tic Tac Toe</div>
+        </div>
+      </div>
+      <div>
+        <Projects
+          image={image[selected]}
+          linkTo={link[selected]}
+          title={title[selected]}
+          deskripsi={deskripti[selected]}
+          stack={stack[selected]}
+          git={git[selected]}
+        />
       </div>
     </div>
   );

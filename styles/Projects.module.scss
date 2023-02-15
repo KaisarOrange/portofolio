@@ -2,11 +2,9 @@
   margin: auto;
   opacity: 0;
   transition: opacity 1s linear 3000ms, opacity 3000ms;
-
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
-  align-items: center;
 
   padding: 10px;
   &.show {
@@ -23,6 +21,7 @@
   }
   .video {
     width: 100%;
+    height: auto;
   }
 
   .bangkit {
@@ -120,24 +119,28 @@
     color: rgb(36, 27, 196);
     margin-top: 20px;
   }
-  .realSideBar {
-  }
 }
 
 @media only screen and (min-width: 1024px) {
-  .video {
-  }
-  .realSideBar {
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    flex-direction: row;
     gap: 50px;
+    width: 150vh;
+    height: 100vh;
+    .sidebar {
+      font-size: 1rem;
+    }
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .video {
+  .container {
+    margin-top: 50px;
   }
 }
 
-@media only screen and (min-width: 340px) {
-  .video {
-  }
+@media only screen and (min-width: 320px) {
 }
