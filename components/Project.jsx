@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
-import styles from '../styles/Projects.module.scss';
 import Projects from './Projects';
+
+import styles from '../styles/Projects.module.scss';
 import { useInView } from 'react-intersection-observer';
 function Project() {
   const { ref, inView } = useInView({ threshold: 0, triggerOnce: true });

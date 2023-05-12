@@ -10,7 +10,7 @@ function Heading() {
     >
       <div className={styles.title}>
         <h1>Alif Ayodya</h1>
-        <h3>Front End Engineer</h3>
+        <h2>Software Engineer</h2>
       </div>
       <div className={styles.about}>
         <div>

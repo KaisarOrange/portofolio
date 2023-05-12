@@ -2,9 +2,6 @@
   margin: auto;
   opacity: 0;
   transition: opacity 1s linear 3000ms, opacity 3000ms;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
 
   padding: 10px;
   &.show {
