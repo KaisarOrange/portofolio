@@ -12,30 +12,7 @@ import { autoPlay } from 'react-swipeable-views-utils';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-const images = [
-  {
-    label: 'Menu Page',
-    imgPath: '/img/aa.png',
-  },
-  {
-    label: 'OrderPage',
-    imgPath: '/img/bb.png',
-  },
-  {
-    label: 'Finish Page',
-    imgPath: '/img/dd.png',
-  },
-  {
-    label: 'Hehe Page',
-    imgPath: '/img/ee.png',
-  },
-  {
-    label: 'Welcome Page',
-    imgPath: '/img/cc.png',
-  },
-];
-
-function SwipeableTextMobileStepper() {
+function SwipeableTextMobileStepper({ images, width, maxWidth, heigth }) {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -55,7 +32,7 @@ function SwipeableTextMobileStepper() {
   return (
     <Box
       sx={{
-        maxWidth: 600,
+        maxWidth,
         flexGrow: 1,
         margin: 'auto',
       }}
@@ -72,10 +49,10 @@ function SwipeableTextMobileStepper() {
               <Box
                 component='img'
                 sx={{
-                  height: 600,
+                  height: heigth,
                   display: 'block',
-                  width: 300,
-                  maxWidth: 600,
+                  width: width,
+                  maxWidth: maxWidth,
                   overflow: 'hidden',
 
                   margin: 'auto',
