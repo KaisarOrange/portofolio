@@ -32,7 +32,7 @@ function SwipeableTextMobileStepper({ images, width, maxWidth, heigth }) {
   return (
     <Box
       sx={{
-        maxWidth,
+        maxWidth: '100vh',
         flexGrow: 1,
         margin: 'auto',
       }}
