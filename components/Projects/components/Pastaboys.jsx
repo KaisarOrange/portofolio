@@ -19,6 +19,9 @@ function Pastaboys({
     <Box
       height={'100vh'}
       display={'flex'}
+      sx={{
+        flexDirection: { xs: 'column', md: 'row' },
+      }}
       gap={'20px'}
       justifyContent={'space-between'}
       alignItems={'center'}
