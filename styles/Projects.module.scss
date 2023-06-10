@@ -3,7 +3,7 @@
   opacity: 0;
   transition: opacity 1s linear 3000ms, opacity 3000ms;
 
-  padding: 10px;
+  padding-top: 100px;
   &.show {
     opacity: 1;
     animation: normal;

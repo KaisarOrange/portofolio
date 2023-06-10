@@ -3,7 +3,7 @@ import React from 'react';
 
 function TechnologyParser({ items }) {
   return (
-    <Box display={'flex'} gap={2}>
+    <Box display={'flex'} flexWrap={'wrap'} justifyContent={'center'} gap={2}>
       {items.map((e) => {
         return (
           <Box textAlign={'center'}>

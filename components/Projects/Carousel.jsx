@@ -12,7 +12,13 @@ import { autoPlay } from 'react-swipeable-views-utils';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-function SwipeableTextMobileStepper({ images, width, maxWidth, heigth }) {
+function SwipeableTextMobileStepper({
+  images,
+  width,
+  maxWidth,
+  heigth,
+  isPhone,
+}) {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -49,12 +55,11 @@ function SwipeableTextMobileStepper({ images, width, maxWidth, heigth }) {
               <Box
                 component='img'
                 sx={{
-                  height: { xs: '30vh', md: heigth },
+                  height: { xs: '25vh', md: heigth },
                   display: 'block',
-                  width: { xs: '60vh', md: width },
-                  maxWidth: maxWidth,
+                  width: { xs: isPhone ? '15vh' : '100%', md: width },
+                  maxWidth: { xs: '100%', md: '100%' },
                   overflow: 'hidden',
-
                   margin: 'auto',
                 }}
                 src={step.imgPath}

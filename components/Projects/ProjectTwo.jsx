@@ -78,10 +78,17 @@ function ProjectTwo() {
   const { ref, inView } = useInView({ threshold: 0, triggerOnce: true });
   return (
     <Box
+      padding={1}
       ref={ref}
       className={`${styles.container} ${inView ? styles.show : ''}`}
     >
-      <Typography sx={{ fontWeight: 'bold', fontSize: '1.8rem' }}>
+      <Typography
+        sx={{
+          fontWeight: 'bold',
+          fontSize: { xs: '1.5rem', md: '1.8rem' },
+          marginBottom: 12,
+        }}
+      >
         Projects
       </Typography>
       <Pastaboys
@@ -91,10 +98,12 @@ function ProjectTwo() {
         indev={true}
         paradua={paraDuaPasta}
         paratiga={paraTigaPasta}
+        isPhone={true}
         width={300}
         heigth={600}
         items={items}
       />
+      <Box sx={{ margin: { xs: 30, md: 15 } }}></Box>
       <Pastaboys
         title={'Admin Dashboard'}
         parasatu={parasatuAdmin}

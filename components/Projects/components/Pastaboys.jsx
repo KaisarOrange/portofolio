@@ -14,20 +14,27 @@ function Pastaboys({
   paradua,
   paratiga,
   indev,
+  isPhone,
 }) {
   return (
     <Box
       height={'100vh'}
       display={'flex'}
       sx={{
-        flexDirection: { xs: 'column', md: 'row' },
+        flexDirection: { xs: 'column', md: isPhone ? 'row' : 'column' },
+        alignItems: { xs: '', md: 'center' },
       }}
+      marginTop={{ xs: 10, md: 0 }}
       gap={'20px'}
-      justifyContent={'space-between'}
-      alignItems={'center'}
+      justifyContent={{
+        xs: 'space-around',
+        md: isPhone ? 'space-between' : 'space-around',
+      }}
     >
       <Box>
-        <Typography sx={{ fontSize: '3.2rem', fontWeight: 'bold' }}>
+        <Typography
+          sx={{ fontSize: { xs: '2rem', md: '3.2rem' }, fontWeight: 'bold' }}
+        >
           {title}
         </Typography>
 
@@ -47,6 +54,7 @@ function Pastaboys({
       </Box>
       <Box>
         <SwipeableTextMobileStepper
+          isPhone={isPhone}
           images={images}
           width={width}
           maxWidth={width}

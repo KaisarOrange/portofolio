@@ -3,15 +3,16 @@ import Navbar from '../components/Navbar';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import ProjectTwo from '../components/Projects/ProjectTwo';
+import { Box } from '@mui/material';
 
 export default function Home() {
   return (
-    <div>
+    <Box>
       <Navbar />
       <Heading />
       <ProjectTwo />
       <Contact />
       <Footer />
-    </div>
+    </Box>
   );
 }
