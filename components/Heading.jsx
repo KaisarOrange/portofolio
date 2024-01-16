@@ -19,10 +19,9 @@ function Heading() {
         <div className={styles.summary}>
           <h2>Hello, World!</h2>
           <p>
-            Web developer student from University of Brawijaya I like to learn
-            new things and seek challenges. Specialising in Javascript language,
-            framework, and libraries. Mainly React.js, but open to learn beyond
-            it.
+            Software Engineer graduated from Universitas Brawijaya with the goal
+            be always a learning machine. I'm open for opportunities, let's
+            connect!
           </p>
         </div>
       </div>
