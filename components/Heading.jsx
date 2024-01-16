@@ -20,7 +20,7 @@ function Heading() {
           <h2>Hello, World!</h2>
           <p>
             Software Engineer graduated from Universitas Brawijaya with the goal
-            be always a learning machine. I'm open for opportunities, let's
+            to be always a learning machine. I'm open for opportunities, let's
             connect!
           </p>
         </div>
