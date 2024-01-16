@@ -18,6 +18,8 @@ function ProjectTwo() {
     'Pastaboys is a small business located in Malang, Indonesia. Being run by dormary students, Pastaboys hold dearly products quality and customer satistfaction.',
   ];
 
+  const parasatuSmart = ["Bachelore's degree final project"];
+
   const parasatuAdmin = [
     'To handle orders, pastaboys uses a sophisticated admin dashboard. node js with express.js framework for backend and passport.js with Session strategy to authenticate its api routes and to access  the application.',
   ];
@@ -39,6 +41,15 @@ function ProjectTwo() {
     { name: 'Material UI', image: './img/mui.png' },
     { name: 'Passport.js', image: './img/ps.webp' },
   ];
+
+  const itemsSmart = [
+    { name: 'Svelte', image: './img/Smart/svelte.png' },
+    { name: 'Go', image: './img/Smart/go.png' },
+    { name: 'Go-fiber', image: './img/Smart/fiber.svg' },
+    { name: 'PostgreSql', image: './img/postgres.png' },
+    { name: 'Google cloud', image: './img/Smart/gcp.png' },
+    { name: 'Docker', image: './img/Smart/docker.png' },
+  ];
   const itemsBangkit = [
     { name: 'React', image: './img/react.svg' },
     { name: 'React query', image: './img/rq.png' },
@@ -58,6 +69,13 @@ function ProjectTwo() {
       label: 'Finish Page',
       imgPath: '/img/Pastaboys/tiga.png',
     },
+  ];
+  const imagesSmart = [
+    { label: 'Welcome Page1', imgPath: './img/Smart/smart2.png' },
+    { label: '2', imgPath: './img/Smart/smart1.png' },
+    { label: '3', imgPath: './img/Smart/smart3.png' },
+    { label: '4', imgPath: './img/Smart/smart4.png' },
+    { label: '5', imgPath: './img/Smart/smart5.png' },
   ];
   const imagesPasta = [
     {
@@ -124,6 +142,20 @@ function ProjectTwo() {
       >
         Projects
       </Typography>
+      <Pastaboys
+        title={'Smart Office'}
+        parasatu={parasatuSmart}
+        paradua={paraDuaAdmin}
+        paratiga={''}
+        indev={false}
+        images={imagesSmart}
+        width={700}
+        heigth={350}
+        items={itemsSmart}
+        liveEnabled={false}
+        live={''}
+        github={'https://github.com/KaisarOrange'}
+      />
       <Pastaboys
         title={'Pastaboys'}
         images={imagesPasta}

@@ -39,7 +39,7 @@
   .profile {
     border-radius: 10%;
     //box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.351);
-    width: 16rem;
+    width: 13rem;
   }
   h2 {
     margin-top: 20px;
@@ -76,6 +76,9 @@
     flex-direction: row;
     p {
       text-align: start;
+    }
+    .profile {
+      width: 16rem;
     }
   }
 }
