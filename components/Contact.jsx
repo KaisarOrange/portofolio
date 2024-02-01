@@ -17,7 +17,7 @@ function Contact() {
         <div className={styles.contactContentContainer} ref={ref}>
           <Link
             className={styles.link}
-            href='https://www.linkedin.com/in/alif-ayodya22/'
+            href='https://www.linkedin.com/in/alif-ayodya/'
           >
             <img src='/img/link.svg' />
           </Link>
